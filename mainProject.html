@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/> 
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    
+    <title>Taste Of Sushi</title>
+  <head>
+  <body>
+    <header class="jumbotron jumbotron-fluid">
+      <div class="container">
+          <div class="row">
+              <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                  <a href="mainIndex.html"><img src="sushi/cherry-blossom-1246539_1280.jpg" class="img-fluid" /></a>
+               </div>
+              <div class="col">
+                  <h1>Sushi</h1>
+                  <h2>yummy yummy</h2>
+              </div>
+              <div class="col-md-4 col-xl-2">
+                  <a data-toggle="modal" data-target="#reserveModal"><button class="btn btn-dark btn-lg mt-4">Make Reservation!</button></a>
+              </div>
+          </div>
+      </div>
+  </header>
+  <div id="reserveModal" class="modal">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h3 class="modal-title">Reservation</h3>
+          <button type="button" class="close" data-dismiss="modal">&times</button>
+        </div>
+        <div class="modal-body">
+          <form id="reserveForm">
+            <div class="form-group row">
+              <div class="col">
+                <label class="col-form-label" for="numAdults">Number of adults</label>
+              </div>
+              <div class="col-sm-6">
+                <select class="form-control" name="numAdults" id="numAdults">
+                  <option selected>Select...</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6</option>
+                  <option>7</option>
+                  <option>8</option>
+                  <option>9</option>
+                  <option>10</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                <label class="col-form-label" for="numChildren">Number of children</label>
+              </div>
+              <div class="col-sm-6">
+                <select class="form-control" name="numChildren" id="numAdults">
+                  <option selected>Select...</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col">
+                <label class="col-form-label" for="date">Date</label>
+              </div>
+              <div class="col-sm-6">
+              <input class="form-control" type="date" id="date" name="date" placeholder=""/>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <label class="col-form-label" for="time">Time</label>
+            </div>
+            <div class="col-sm-6">
+              <input class="form-control" type="time" id="time" name="time" placeholder=""/>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="col">
+              <label class="col-form-label" for="highChair">Need highchair?</label>
+            </div>
+            <div class="col btn-group btn-group-toggle" data-toggle="buttons">
+              <label class="btn btn-dark active">
+                <input type="radio" name="chairOpt" id="noChair" autocomplete="off" checked>No
+              </label>
+              <label class="btn btn-danger">
+                <input type="radio" name="chairOpt" id="yesChair" autocomplete="off">Yes
+              </label>
+            </div>
+          </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-danger">Confirm</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
+    <div class="container">
+      <a class="navbar-brand" href="mainIndex.html"><img src="sushi/cherry-blossom-1246539_1280.jpg" height="30" width="30" >sushi</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="mainIndex.html"><i class="fa fa-home">Home</i></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#"><i class="fa fa-info-circle">About</i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mainContact.html"><i class="fa fa-address-card">Contact</i></a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+    <div class="sidenav d-none d-sm-block">
+  <ul>
+      <a class="nav-link" href="#sashimi">Sashimi</a></li>
+      <a class="nav-link" href="#nigiri">Nigiri</a></li>
+      <a class="nav-link" href="#maki">Maki</a></li>
+      <a class="nav-link" href="#temaki">Temaki</a></li>
+      <a class="nav-link" href="#roll">Roll</a></li>
+      <a class="nav-link" href="#knife">Sashimi knives</a></li>
+      <a class="nav-link" href="#makisu">Makisu</a></li>
+      <a class="nav-link" href="#neta">Neta case</a></li>
+      <a class="nav-link" href="#hangiri">Hangiri tub</a></li>
+  </ul>
+</div>
+  </div>
+      <div class="row">
+        <div class="col">
+          <h1>Sushi the cuisine</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2>About sushi</h2>
+          <p> Sushi the delicate cuisine modernized sometime around the mid-1800's. Some say that sushi originated in Southeast Asia and eventually landed on plates in Japan! 
+            While the sushi we eat now days is made with sweet sticky rice, back then the rice was fermented and discarded before eating to keep the fish preserved!</p>
+        </div>
+      </div>
+      <div class="row">
+       <div class="col">
+          <h3>Sushi styles </h3>
+          </div>
+      </div>
+      <div class="row">
+        <div class="card-deck my-2">
+          <div class="card border-dark"> 
+          <img id="sashimi" class="card-img-top img-fluid" src="./sushi/time-965184_640.jpg" alt="Sashimi"/>      
+        <div class="card-body">
+         <h4 class="card-title">Sashimi</h4>
+          <p class="card-text d-none d-sm-block">For the purests pleasure sashimi is only raw fish. 
+        Each piece of sashimi is sculpted perfectly to delicately displayed its natural beauty. 
+        A plate of this treat can have many varieties of seafood.</p>
+        </div>
+      </div>
+          <div class="card border-dark">
+          <img id="nigiri" class="img-fluid" src="./sushi/sushi-354629_640.jpg" alt="nigiri">
+          <div class="card-body">
+          <h4 class="card-title">Nigiri</h4>
+          <p class="card-text d-none d-sm-block">Nigiri one of the oldest forms of sushi. This is fish over rice. Very simple and tasty. 
+            Typically a perfect amount of wasabi is put between the rice and fish to compliment the two flavors. </p>
+       </div>
+      </div>
+    </div>
+  </div>
+      <div class="row">
+        <div class="card-deck mb-2">
+         <div class="card border-dark">
+          <img id="maki" class="img-fluid" src="./sushi/asian-1239271_640.jpg" alt="maki"> 
+          <div class="card-body">
+          <h4 class="card-title">Maki</h4>
+          <p class="card-text d-none d-sm-block"> Maki is a traditional style roll, maki meaning roll in Japanese. This is a form of sushi that adds the incredient of seaweed. 
+            The rice is spread on the seaweed and the ingredients are placed inside rolled with the seaweed towards the outside. 
+            This roll is then cut into bite size pieces.</p>
+        </div>
+      </div>
+          <div class="card border-dark">
+            <img id="temaki" class="img-fluid card-img-top" src="sushi/so-good-could-leave-a-message-or-rate-it-please-thanks-1326900-639x540.jpg" alt="Handroll">
+            <div class="card-body">
+          <h4 class="card-title">Temaki</h4>
+          <p class="card-text d-none d-sm-block"> Te(hand)-maki(roll) is a cone shaped similar to an ice cream cone. Inside is packed full of ingredients. 
+            The seaweed is placed on the outside while rice and ingredients are rolled inside. 
+            This is ment to be eaten with your hands and no need for utensilse.</p>
+        </div>
+        <div class="card-footer">
+         <small class="text-muted">Photo by <a href="/photographer/XUDEERIKA-52732">Érika Kuchauskas</a> from <a href="https://freeimages.com/">FreeImages</a></small> 
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 my-auto">
+          <div class="card border-dark">
+          <img id="roll" class="img-fluid" src="./sushi/sushi-748139_640.jpg" alt="sushi roll">
+        <div class="card-body">
+          <h4 class="card-title">Roll</h4>
+          <p class="card-text d-none d-sm-block"> This "roll" style sushi is what most people consider to be "sushi". Probably the most famous roll that most people know of is the <em>California roll</em>. 
+            This style sushi is made with the rice on the outside of the roll and ingredients placed inside and on top of the roll. 
+            With this style there is almost endless possibilities.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+      <div class="row">
+       <div class="col">
+          <h2>Tools of the trade</h2>
+          <p> There are many tools that are unique to sushi. Each tool has a key role in the art of preparing sushi. 
+            These are things you wont find in a everyday kitchen. </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h3>Type of tools</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="card-deck my-2">
+          <div class="card border-dark">
+          <img id="knife" class="img-fluid" src="./sushi/knife.jpg" alt="sushi knife"> 
+        <div class="card-body">
+          <h4 class="card-title">Sashimi knives</h4>
+          <p class="card-text d-none d-sm-block"> Specific to the shape of this knife it is flat on one side and angled on the other to slide the fish off the knife with a simple twist. 
+            When used to cut several pieces of sashimi the sashimi will stack up perfectly next to eachother so that the sushi chef can pick it up place it on the plate in one motion.</p>
+      </div>
+      </div>
+          <div class="card border-dark">
+          <img id="makisu" class="img-fluid" src="./sushi/makisu.jpg" alt="makisu">
+        <div class="card-body">
+          <h4 class="card-title">Makisu</h4>
+          <p class="card-text d-none d-sm-block"> This is a bamboo mat that is used to shape the sushi rolls. The rolls are simply placed underneath and given a little pressure to give it a round or square shape. The makisu is also used to make makis. 
+            Probably one of the most used tools next to the knife.</p>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="row">
+        <div class="card-deck my-auto">
+          <div class="card border-dark">
+          <img id="neta"class="img-fluid" src="./sushi/neta.jpg" alt="neta case">
+        <div class="card-body">
+          <h4 class="card-title">Neta case</h4>
+          <p class="card-text d-none d-sm-block"> The neta case is the display case that holds all the different types of fish. 
+            Its almost completely glass with sliding doors and several referigeration bars. 
+            This is what keeps the sushi at the correct temperature.</p>
+        </div>
+      </div>
+          <div class="card border-dark">
+          <img id="hangiri" class="img-fluid" src="./sushi/hangiri.jpg" alt="hangiri tub">
+        <div class="card-body">
+          <h4 class="card-title">Hangiri tub</h4>
+          <p class="card-text d-none d-sm-block">This tub is made of pine and is used as a container to mix the rice vinegar with large batchs of rice. The hangiri designed to hold the moisture as the steamed rice cools off. 
+            This is one of the most important tools because rice is the most important part of sushi.</p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 col-sm-6 text-center">
+          <h4>Links</h4>
+          <ul class="list-unstyled">
+            <li><a class="text-dark" href="mainIndex.html"><i class="fa fa-home">Home</i></a></li>
+            <li><a class="text-dark" href="#"><i class="fa fa-info-circle">About</i></a></li>
+            <li><a class="text-dark" href="mainContact.html"><i class="fa fa-address-card">Contact</i></a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-sm-6 text-center">
+          <h4>Resources</h4>
+          <ul class="list-unstyled">
+            <li><a class="text-dark" href="https://en.wikipedia.org/wiki/Sushi" target="blank"><i class="fa fa-info">Information</i></a></li>
+            <li><a class="text-dark" href="https://www.freeimages.com/" target="blank"><i class="fa fa-picture-o">Images</i></a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+<script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+body {
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif; }
+
+.header {
+  background-image: url("../sushi/let-s-go-sushi-2-1322778-1598x1089.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+
+.description {
+  position: absolute;
+  top: 30%;
+  margin: auto;
+  padding: 4em; }
+
+.description h1 {
+  color: red; }
+
+.description p {
+  color: white;
+  font-size: 30px;
+  width: 100%;
+  line-height: 1.5; }*/
+
+h1 {
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: capitalize; }
+
+h2, h3, h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-transform: capitalize; }
+
+h4 {
+  font-size: 25px; }
+
+a {
+  text-decoration: none; }
+
+#moreInfo p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center; }
+
+#links {
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  border: solid black 4px; }
+
+.site-footer {
+  background-image: linear-gradient(to bottom, #fffaf0, #cd5c5c, #b22222);
+  padding: 20px 0; }
+
+.jumbotron {
+  margin-bottom: 0;
+  background-image: linear-gradient(to right, #fffaf0, #cd5c5c, #b22222); }
+
+  .card:hover {
+    border-color: #b22222;
+  }
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%;
+  /* Full-height: remove this if you want "auto" height */
+  width: 250px;
+  /* Set the width of the sidebar */
+  position: fixed;
+  /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #111;
+  /* Black */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 80px; }
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block; }
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+/* Style page content */
+.main {
+  margin-left: 160px;
+  /* Same as the width of the sidebar */
+  padding: 0px 10px; }

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width intial-scale=1.0">
+        <title>Taste Of Sushi</title>
+
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"/> 
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link href="css/styles.css" type="text/css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                        <a href="/mainIndex.html"><img src="sushi/cherry-blossom-1246539_1280.jpg" class="img-fluid" /></a>
+                     </div>
+                    <div class="col">
+                        <h1>Sushi</h1>
+                        <h2>yummy yummy</h2>
+                    </div>
+                    <div class="col-md-4 col-xl-2">
+                        <a data-toggle="modal" data-target="#reserveModal"><button class="btn btn-dark btn-lg mt-4">Make Reservation!</button></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="reserveModal" class="modal">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header bg-danger text-white">
+                <h3 class="modal-title">Reservation</h3>
+                <button type="button" class="close" data-dismiss="modal">&times</button>
+              </div>
+              <div class="modal-body">
+                <form id="reserveForm">
+                  <div class="form-group row">
+                    <div class="col">
+                      <label class="col-form-label" for="numAdults">Number of adults</label>
+                    </div>
+                    <div class="col-sm-6">
+                      <select class="form-control" name="numAdults" id="numAdults" required>
+                        <option selected>Select...</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col">
+                      <label class="col-form-label" for="numChildren">Number of children</label>
+                    </div>
+                    <div class="col-sm-6">
+                      <select class="form-control" name="numChildren" id="numAdults" required>
+                        <option selected>Select...</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col">
+                      <label class="col-form-label" for="date">Date</label>
+                    </div>
+                    <div class="col-sm-6">
+                    <input class="form-control" type="date" id="date" name="date" placeholder="" required/>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col">
+                    <label class="col-form-label" for="time">Time</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <input class="form-control" type="time" id="time" name="time" placeholder="" required/>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <div class="col">
+                    <label class="col-form-label" for="highChair">Need highchair?</label>
+                  </div>
+                  <div class="col btn-group btn-group-toggle" data-toggle="buttons" >
+                    <label class="btn btn-dark active">
+                      <input type="radio" name="chairOpt" id="noChair" autocomplete="off" checked>No
+                    </label>
+                    <label class="btn btn-danger">
+                      <input type="radio" name="chairOpt" id="yesChair" autocomplete="off">Yes
+                    </label>
+                  </div>
+                </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-danger">Confirm</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top ">
+          <div class="container">
+            <a class="navbar-brand" href="mainIndex.html"><img src="sushi/cherry-blossom-1246539_1280.jpg" height="30" width="30" >sushi</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="mainIndex.html"><i class="fa fa-home">Home</i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mainProject.html"><i class="fa fa-info-circle">About</i></a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fa fa-address-card">Contact</i></a>
+                  </li>
+                </ul>
+              </div>
+          </div>
+        </nav>
+        <div class="container">
+        <div class="card border-dark my-3 text-center">
+            <div class="row">
+              <div class="col">
+            <h1 class="card-title">Contact Yummy Yummy</h1>
+            <img src="sushi/chinese-anyone-1324862-1280x960.jpg" class="card-img-top"/>
+          </div>
+            </div>
+            <div class="card-body">
+              <div class="row">
+              <div class="col">
+                <h3>Address</h3>
+                <p class="card-text mb-3">1234 sushi way <br/>rollsville, CA</p>
+              </div>
+              <div class="col">
+                <h3>Phone Number</h3>
+                <p class="card-text mb-3">(123)456-7890</p>
+              </div>
+              <div class="col">
+                <h3>Email</h3>
+                <p class="card-text mb-3">IEATSUSHIALLLDAYLONG@ROLL.OMG</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="site-footer">
+            <div class="container">
+              <div class="row">
+                <div class="col-6 col-sm-6 text-center">
+                  <h4>Links</h4>
+                  <ul class="list-unstyled">
+                    <li><a class="text-dark" href="mainIndex.html"><i class="fa fa-home">Home</i></a></li>
+                    <li><a class="text-dark" href="mainProject.html"><i class="fa fa-info-circle">About</i></a></li>
+                    <li><a class="text-dark" href="#"><i class="fa fa-address-card">Contact</i></a></li>
+                  </ul>
+                </div>
+                <div class="col-6 col-sm-6 text-center">
+                  <h4>Resources</h4>
+                  <ul class="list-unstyled">
+                    <li><a class="text-dark" href="https://en.wikipedia.org/wiki/Sushi" target="blank"><i class="fa fa-info">Information</i></a></li>
+                    <li><a class="text-dark" href="https://www.freeimages.com/" target="blank"><i class="fa fa-picture-o">Images</i></a></li>
+                  </ul>
+                </div>
+              </div>
+        
+            </div>
+          </footer>
+        
+
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src='js/main.js'></script>
+    </body>
+</html>
